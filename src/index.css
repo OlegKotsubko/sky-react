@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-text-color: #000;
+  --main-warning-color: #ff0000;
+  --facebook-color: #2d609b;
+  --twitter-color: #00c3f3;
+}
+
+html {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 1rem;
+}
+
+.t-sub {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.airstrike {
+  position: relative;
+  margin-top: -25%;
+  z-index: 1;
+}

@@ -1,0 +1,66 @@
+.counter__list {
+  justify-content: center;
+}
+
+.counter__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 6.5rem;
+  max-height: 12rem;
+  aspect-ratio: 6.5/12;
+  background: rgba(207, 207, 207, 0.51);
+  backdrop-filter: blur(19.7333px);
+  border-radius: 1rem;
+  box-shadow: 3px 12px 11px rgba(0, 0, 0, 0.25);
+  margin-right: 0.25rem;
+}
+
+.counter__item:last-child {
+  margin-right: 0;
+}
+
+.counter__item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(196, 196, 196, 0) 0%,
+    #9e9e9e 51.96%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  opacity: 0.5;
+}
+
+.counter__item--small {
+  max-height: 6rem;
+  border-radius: 0.5rem;
+}
+
+.counter__number {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--main-warning-color);
+  font-size: clamp(1rem, 28vw, 13rem);
+  line-height: 1;
+}
+
+.counter__number--small {
+  font-size: clamp(1rem, 20vw, 4rem);
+}
+
+@media (min-width: 768px) {
+  .counter__item--small {
+    max-height: 9rem;
+    border-radius: 1rem;
+  }
+
+  .counter__number--small {
+    font-size: clamp(1rem, 40vw, 10rem);
+  }
+}
