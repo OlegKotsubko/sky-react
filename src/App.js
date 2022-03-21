@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Cards } from './components/Cards';
 
 import { Counter } from './components/Counter';
 import { Map } from './components/Map';
@@ -65,6 +66,12 @@ const App = () => {
               THEY CAN NOT SLEEP, OR HAVE TO FLEE TO BOMB SHELTERS, AFRAID THAT THEIR HOUSE IS THE TARGET FOR RUSSIAN MISSILES
             </p>
           </div>
+        </section>
+        <section>
+        <h1 className='title-big'>
+          HELP US - SPREAD THE MESSAGE
+        </h1>
+        <Cards />
         </section>
       </main>
     </div>
